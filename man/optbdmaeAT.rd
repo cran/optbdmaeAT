@@ -8,7 +8,7 @@
 Optimal block designs for two-colour cDNA microarray experiments
 }
 \description{
-Used to compute A-, MV-, D- or E-optimal or near-optimal block designs for two-colour cDNA microarray experiments under either the linear fixed effects model or the linear mixed effects model settings using either the array exchange or treatment exchange algorithms of Debusho, Gemechu and Haines (2016).}
+Used to compute A-, MV-, D- or E-optimal or near-optimal block designs for two-colour cDNA microarray experiments under either the linear fixed effects model or the linear mixed effects model settings using either the array exchange or treatment exchange algorithms of Debusho, Gemechu and Haines (2018) <doi.org/10.1080/03610918.2018.1429617>.}
 \usage{
 optbdmaeAT(trt.N, blk.N, theta, nrep, itr.cvrgval, Optcrit = "", Alg = "", ...)
 
@@ -59,7 +59,7 @@ generated using the function \code{\link{intcbd.mae}}.
 The minimum value of \code{trt.N} and \code{blk.N} is 3 and \code{trt.N} should be less than or equal to \code{blk.N - 1}. 
 The linear fixed effects model results for given \code{trt.N} and \code{blk.N} are obtained by setting \code{theta = 0.0}.
 
-\code{Alg} specifies the exchange algorithm of Debusho, Gemechu and Haines (2016). If \code{Alg = "trtE"}, the function 
+\code{Alg} specifies the exchange algorithm of Debusho, Gemechu and Haines (2018). If \code{Alg = "trtE"}, the function 
 \code{optbdmaeAT} perform  the treatment exchange procedure through deletion and addition of treatments at a time and selects a 
 design with best treatment exchange with respect to the optimality criterion value. If \code{Alg = "arrayE"}, the function 
 \code{optbdmaeAT} perform the array exchange procedure through deletion and addition of candidate arrays at a time and selects a 
@@ -112,7 +112,7 @@ GUI tcltk window can be used to generate optimal or near-optimal block designs, 
 
 }
 \references{
-Debusho, L. K., Gemechu, D. B., and Haines, L. M. (2016).  Algorithmic construction of optimal block designs for two-colour cDNA microarray experiments using the linear mixed model. Under review.
+Debusho, L. K., Gemechu, D. B. and Haines, L. (2018). Algorithmic construction of optimal block designs for two-colour cDNA microarray experiments using the linear mixed effects model. \emph{Communications in Statistics - Simulation and Computation, https://doi.org/10.1080/03610918.2018.1429617}.
 
 Gemechu D. B., Debusho L. K. and Haines L. M. (2014). A-optimal designs for two-colour cDNA microarray experiments using the linear mixed effects model. \emph{Peer-reviewed Proceedings of the Annual Conference of the South African Statistical Association for 2014 (SASA 2014), Rhodes University, Grahamstown, South Africa}. pp 33-40, ISBN: 978-1-86822-659-7.
 }

@@ -65,7 +65,7 @@ MVoptbd.maeA<-function(trt.N,blk.N,theta,nrep,itr.cvrgval) {
   nb=best[1,1]
   MVscore<-best[1,2]
   MVoptde<- desbest.1[c((nb-1)*2+1,nb*2),]
-  tkmessageBox(title="Search completed",message=paste("Search completed",sep=""))
+  if(trt.N!=3) {tkmessageBox(title="Search completed",message=paste("Search completed",sep=""))}
   cnames=paste0("Ary",1:blk.N)
   dimnames(MVoptde)=list(NULL,cnames)
   MVopt_sum2<-list("v"=trt.N,"b"=blk.N,theta=theta,nrep=nrep,itr.cvrgval=itr.cvrgval, "OptdesF"=MVoptde,"Optcrtsv" =MVscore)

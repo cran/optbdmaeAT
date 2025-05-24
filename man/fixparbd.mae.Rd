@@ -4,7 +4,7 @@
 Sets parametric values
 }
 \description{
-Creates a \code{\link{tcltk}} widow that allow the users to set or fix values for the parametric combinations to compute optimal or near-optimal block designs.}
+Creates a \code{tcltk} widow that allow the users to set or fix values for the parametric combinations to compute optimal or near-optimal block designs.}
 \usage{
 fixparbd.mae(Optcrit)
 }
@@ -37,6 +37,6 @@ Dibaba Bayisa Gemechu, Legesse Kassa Debusho, and Linda Haines
 }
  
 \seealso{
-\code{\link{optbdmaeAT}}, \code{\link{mmenubd.mae}}, \code{\link{tcltk}}, \code{\link{TkWidgets}}
+\code{\link{optbdmaeAT}}, \code{\link{mmenubd.mae}}
 }
  

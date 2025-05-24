@@ -26,7 +26,8 @@ graphoptbd.mae<-function(trt.N, blk.N,theta,OptdesF,Optcrit,cbVal2) {
            justify="center", font=tcltk::tkfont.create(family="helvetica",size=15,weight="bold"))
   tkcreate(canvas, "text", width/2, 45, text=NgoutST,
            justify="center", font=tcltk::tkfont.create(family="helvetica",size=15,weight="bold"))
-  graph.OutlayoptBlk<-paste(getwd(), NOptcrtrG,sep="/")
+  graph.OutlayoptBlk<-tempdir()
+    #file.path(tempdir(),  paste(NOptcrtrG,sep=""))
   if(!file.exists(graph.OutlayoptBlk)) dir.create(graph.OutlayoptBlk)
   obtdes.goutloptBlk<-paste(graph.OutlayoptBlk,paste(trtblkthetano,NOptcrtrG2,sep=""),sep="/")
   pdf(file=obtdes.goutloptBlk)

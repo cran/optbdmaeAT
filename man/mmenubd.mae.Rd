@@ -18,5 +18,5 @@ Dibaba B. Gemechu, Legesse K. Debusho, and Linda M. Haines
 }
 
 \seealso{
-\code{\link{optbdmaeAT}}, \code{\link{fixparbd.mae}}, \code{\link{tcltk}}, \code{\link{TkWidgets}}
+\code{\link{optbdmaeAT}}, \code{\link{fixparbd.mae}}
 }
